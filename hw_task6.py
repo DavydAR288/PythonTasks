@@ -4,3 +4,21 @@
 # Вам требуется написать программу, которая проверяет счастливость билета.
 # 385916 -> yes
 # 123456 -> no
+
+s1 = 0
+s2 = 0
+n = int(input())
+if n > 99999 and n < 1000000:
+    for i in range(3):
+        s1 = s1 + n % 10
+        n = int(n/10)
+    for i in range(3):
+        s2 = s2 + n % 10
+        n = int(n/10)
+    if s1 == s2:
+        print("Yes")
+    else:
+        print("No")
+
+else:
+    print("Error input")
