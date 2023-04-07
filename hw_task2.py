@@ -7,7 +7,7 @@ n = int(input())
 if n > 99 and n < 1000:
     for i in range(3):
         s = s + n % 10
-        n = int(n/10)
+        n = n//10
     print(s)
 else:
     print("Error input")
