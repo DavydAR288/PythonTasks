@@ -5,3 +5,11 @@
 # 24 -> 4  16  4
 # 60 -> 10  40  10
 # Ввести проверку на кратность 6
+
+s = int(input())
+# x + x + 4x = s > 6x = s > x = s/6
+if s % 6 == 0:
+    x = int(s/6)
+    print(x, 4*x, x)
+else:
+    print("Error input")
