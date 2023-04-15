@@ -6,3 +6,14 @@
 # Input:	5 -> 5 1 6 5 9
 # Output:	1 9
 # for
+
+n = int(input("N = "))
+min = 100
+max = 0
+for i in range(n):
+    m = int(input())
+    if m > max:
+        max = m
+    elif m < min:
+        min = m
+print(min, max)

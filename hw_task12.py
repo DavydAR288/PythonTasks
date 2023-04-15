@@ -5,3 +5,38 @@
 # Помогите Кате отгадать задуманные Петей числа.
 # 4 4 -> 2 2
 # 5 6 -> 2 3
+
+s = int(input("S = "))
+p = int(input("P = "))
+x1, x, y1, y = 0, 0, 0, 0,
+d = s ** 2-4*p
+if d > 0:
+    x = (s+d**0.5)/2
+    y = s-x
+elif d == 0:
+    x = s/2
+    y = s-x
+else:
+    print("Error input")
+
+if x % 1 != 0 or y % 1 != 0:
+    print("Error input")
+else:
+    print(x, y)
+
+# x+y=s
+# x*y=p
+# x=s-y
+# (s-y)*y-p=0
+# -y*s+y*y+p=0 >
+#
+# y*y-s*y+p=0
+# d=s*s-4*p
+# x1=(-s+sqr(d))/2
+# x2=(-s+sqr(d))/2
+# x12=-s/2
+#
+# y=
+# x=s-y
+
+# a*x*x+b*x+c=0 D=b*b-4*a*c D>0 > x=(-b+sqr(D))/2*a x=(-b-sqr(D))/2*a; D=0 > x=-b/2*a; D<0 > x-null

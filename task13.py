@@ -22,6 +22,8 @@ for i in range(n):
         if s > stemp:
             stemp = s
     else:
+        if s > stemp:
+            stemp = s
         s = 0
 print("Days whits positive temp ->", stemp)
 

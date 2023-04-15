@@ -13,7 +13,7 @@ if n == 0:
 elif n < 0:
     print("Error input")
 else:
-    while i<n+1:
+    while i<=n:
         f*=i
         i+=1
 print (f)
