@@ -21,3 +21,21 @@
 # ноутбук
 # Вывод:
 # 12
+
+points_en = {1: 'AEIOULNSTR', 2: 'DG', 3: 'BCMP',
+             4: 'FHVMY', 5: 'K', 8: 'JX', 10: 'QZ'}
+points_ru = {1: 'АВЕИНОРСТ', 2: 'ДКЛМПУ', 3: 'БГЁЬЯ',
+             4: 'ЙЫ', 5: 'ЖЗХЦЧ', 8: 'ШЭЮ', 10: 'ФЩЪ'}
+word = input().upper()
+point = 0
+if word(0) in 'QWERTYUIOPASDFGHJKLZXCVBNM':
+    for sym in word:
+        for i in points_en:
+            if sym in points_en[i]:
+                point += i
+else:
+    for sym in word:
+        for i in points_ru:
+            if sym in points_en[i]:
+                point += i
+print(points)

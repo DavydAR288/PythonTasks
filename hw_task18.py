@@ -5,3 +5,16 @@
 # 1 2 3 4 5
 # 6
 # -> 5
+
+lst = []
+n = int(input("N> "))
+for i in range(n):
+    lst.append(int(input(f"{i+1}: ")))
+x = int(input("X> "))
+diff_min = abs(lst[0]-x)
+num = lst[0]
+for i in lst:
+    if abs(i-x) < diff_min:
+        diff_min = abs(i-x)
+        num = i
+print(num)
