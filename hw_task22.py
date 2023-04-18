@@ -5,3 +5,12 @@
 # 3 6 9 12 15 18
 # 6 12
 # пересечение множеств
+
+n = int(input("N> "))
+m = int(input("M> "))
+numbers_n = set(list(map(int, input(f"Множество {n} элементов > ").split())))
+numbers_m = set(list(map(int, input(f"Множество {m} элементов > ").split())))
+
+for i in numbers_n:
+    if i in numbers_m:
+        print (i)
