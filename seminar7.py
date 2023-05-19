@@ -22,7 +22,8 @@
 #lambda
 # def summa(a,b):
 #     return a+b
-# a = lambda x,y: x+y if x == 3 else 0
+a = lambda x,y: x+y if x == 3 else 0
+print(a(3,4))
 
 #map
 # a = [1,2,3,4,5,6]
