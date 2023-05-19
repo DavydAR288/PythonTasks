@@ -35,5 +35,5 @@ def print_operation_table(operation, n, m):
 
     print("Искомый элемент> ", operation(n,m))
 
-x, y = map(int, input("Введите 2 значения через пробел ").split())
+x, y = map(int, input("Введите 2 значения через пробел> ").split())
 print_operation_table(lambda x, y: x * y, x, y)
