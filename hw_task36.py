@@ -21,18 +21,6 @@
 # ...
 # Шестая (6) строка - первая (1), умноженная на 6
 
-# def print_operation_table(operation, num_rows=6, num_columns=6):
-#     list_1=[i for i in range(1, num_columns+1)]
-#     print(*list_1)
-#     for j in range(2, num_rows+1):
-#         list_n=list(map(lambda z:z*j, list_1))
-#         print(*list_n)
-
-# x, y = map(int, input("2 значения ").split())
-
-# print_operation_table(lambda x, y: x * y)
-
-
 
 def print_operation_table(operation, n, m):
     table = []
