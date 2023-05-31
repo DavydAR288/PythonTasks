@@ -15,18 +15,19 @@
 # Число слогов в каждой фразе одинаковое (можно посчитать слоги в словах, из них состоят фразы, слова разделяются дефисами)
 # Считаем количество гласных в каждом слове. Гласные для проверки берем из словаря
 
-def check_rhythm (list_1):
-    print(*list_1)
-    dict_ru=["а", "у", "о", "ы", "и", "э", "я", "ю", "ё", "е"]
-    dict_en=["a", "e", "i", "o", "u", "y"]
-    check_base=0
-    check=check_base
-    if check_base==check:
-        for i in range(len(list_1)):
-            if list_1[i] in dict_en:
-                check+=1
-    print(check)
+def check_rhythm(list_1):
+    dict_char = ["а", "у", "о", "ы", "и", "э", "я",
+                 "ю", "ё", "е", "a", "e", "i", "o", "u", "y"]
+    qual_char = []
+
+    for i in range(len(list_1)):
+        qual_char.append(list(filter(lambda x: x in dict_char, list_1[i])))
+
+    if len(set((list(map(len, qual_char))))) != 1:
+        print("Пам парам")
+    else:
+        print("Парам пам-пам")
 
 
 str_1 = (input("Введите строку> ").split())
-check_rhythm (str_1)
+check_rhythm(str_1)
